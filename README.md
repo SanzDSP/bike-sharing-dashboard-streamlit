@@ -59,7 +59,7 @@ submission
 ---
 
 ## 📂 **Data**
-Dataset penyewaan sepeda berasal dari **Bike Sharing Dataset** dan akan diunduh otomatis menggunakan `gdown` dari Google Drive saat dashboard dijalankan.
+Dataset penyewaan sepeda berasal dari **Bike Sharing Dataset** dan akan diunduh otomatis menggunakan `gdown` dari Google Drive saat dashboard dijalankan. Kemudian Anda juga dapat melakukan modifikasi untuk path data pada `dashboard.py` berdasarkan rekomendasi pada baris `comment` atau versi Anda sendiri.
 
 ---
 
