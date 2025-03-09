@@ -10,7 +10,10 @@ import gdown
 #df = pd.read_csv(r'isi path disini\submission\dashboard\main_data.csv')
 
 # Mengambil data dari drive karena lebih praktis, jika memakai path diatas maka comment baris di bawah ini hingga ke baris load data
-url = f"https://drive.google.com/file/d/1FONrAWVZzjN-bwunymP33MNP_fzjpdRz/view?usp=sharing"
+# ID file dari Google Drive
+file_id = "1FONrAWVZzjN-bwunymP33MNP_fzjpdRz"
+
+url = f"https://drive.google.com/uc?id={file_id}"
 
 # Unduh dan baca file CSV
 csv_path = "main_data.csv"
