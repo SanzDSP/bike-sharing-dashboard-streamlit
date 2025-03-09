@@ -60,6 +60,7 @@ submission
 
 ## 📂 **Data**
 Dataset penyewaan sepeda berasal dari **Bike Sharing Dataset** dan akan diunduh otomatis menggunakan `gdown` dari Google Drive saat dashboard dijalankan. Kemudian Anda juga dapat melakukan modifikasi untuk path data pada `dashboard.py` berdasarkan rekomendasi pada baris `comment` atau versi Anda sendiri.
+- Note: main_data.csv adalah hasil cleaning 2 dataset (day.csv dan hour.csv) yang disatukan
 
 ---
 
