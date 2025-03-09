@@ -1,12 +1,23 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-# Berdasarkan import package pastikan sudah melukan instalasi dengan 'pip install streamlit plotly pandas'
+import gdown
+# Berdasarkan import package pastikan sudah melukan instalasi dengan 'pip install streamlit plotly pandas gdown'
 
 
-# Load data, untuk direktori bisa diubah saja untuk penyesuaian
-# Ubah path pada teks dalam apit tanda petik 1 (r'tambahkan path file main data disini')
-df = pd.read_csv(r'D:\submission dbs codingcamp\project python streamlit\submission-20250309T015315Z-001\submission\dashboard\main_data.csv')
+# Load data untuk run di local atau github, untuk direktori bisa diubah saja untuk penyesuaian
+# Ubah path pada teks dalam apit tanda petik 1 (r'tambahkan path file main data disini') dan hapus # untuk uncomment
+#df = pd.read_csv(r'isi path disini\submission\dashboard\main_data.csv')
+
+# Mengambil data dari drive karena lebih praktis, jika memakai path diatas maka comment baris di bawah ini hingga ke baris load data
+url = f"https://drive.google.com/file/d/1FONrAWVZzjN-bwunymP33MNP_fzjpdRz/view?usp=sharing"
+
+# Unduh dan baca file CSV
+csv_path = "main_data.csv"
+gdown.download(url, csv_path, quiet=False)
+
+# Load data
+df = pd.read_csv(csv_path)
 
 # Konversi kolom tanggal sebagai antisipasi jika ada
 if "dteday" in df.columns:
